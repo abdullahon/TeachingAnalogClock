@@ -36,7 +36,7 @@ class Clock(Tk):
 
 
 
-    def plotter(self):                          #we draw our points circles and yelkovan akrep
+    def plotter(self):                          #drawing points circles and yelkovan akrep
         self.circle(60, 200, 200, 200, 12)     #with other two func  circle and point
         self.canvas.delete('lines')
 
@@ -98,7 +98,7 @@ class Clock(Tk):
         self.canvas.coords(self.akrep, 200, 200, x, y)
         self.printClock("akrep", x, y)
 
-
+#Print the clock on the canvas
     def printClock(self, tur, x, y):
         if tur == "yelkovan":
             for aci, position in self.adiyel.iteritems():
